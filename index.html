@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata section: Defines the character encoding, description, and compatibility settings -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather App">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="/istyle.css">
+
+    <!-- Title of the webpage displayed in the browser tab -->
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- Main section containing the weather search content -->
+    <section class="weather-content">
+        <!-- Heading of the weather search section -->
+        <h1>Buscador del Clima</h1>
+
+        <!-- Div to display the weather search results -->
+        <div class="result"></div>
+
+        <!-- Form to input the city name and submit the weather search request -->
+        <form action="" method="post" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Introduce el nombre de la ciudad">
+            <input type="submit" value="Obtener Clima">
+        </form>
+
+        <!-- Section to display favorite cities -->
+        <div class="favorites">
+            <h2>Favoritos</h2>
+            <!-- Unordered list to display the favorite cities -->
+            <ul id="favorite-list"></ul>
+        </div>
+    </section>
+
+    <!-- Link to external JavaScript file for handling the weather search logic -->
+    <script src="/main.js"></script>
+</body>
+
+</html>

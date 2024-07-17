@@ -1,0 +1,103 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente utilizada */
+    background: #e0eafc; /* Color de fondo */
+    margin: 0; /* Sin margen */
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Contenedor principal de contenido meteorológico */
+.weather-content {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; /* Sombra para el contenedor */
+    max-width: 300px; /* Ancho máximo */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Relleno interno */
+    background-color: #3b5998; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #fff; /* Color de texto */
+    height: 600px; /* Altura fija */
+}
+
+/* Estilo para el título dentro del contenedor */
+.weather-content h1 {
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para los campos de texto y botones de envío */
+.weather-content input[type="text"], 
+.weather-content input[type="submit"] {
+    width: calc(100% - 40px); /* Ancho del 100% menos 40px para el margen */
+    margin: 10px 20px; /* Margen alrededor */
+    padding: 10px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo específico para el botón de envío */
+.weather-content input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor a mano */
+}
+
+/* Efecto hover para el botón de envío */
+.weather-content input[type="submit"]:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para la sección de resultados */
+.result {
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilo para cada elemento de resultado */
+.result div {
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilo para los títulos de los resultados */
+.result h2 {
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+/* Estilo para los párrafos dentro de los resultados */
+.result p {
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+/* Contenedor para la sección de favoritos */
+.favorites {
+    margin-top: 30px; /* Margen superior */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; /* Sombra para el contenedor */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Relleno interno */
+    background-color: #3b5998; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #fff; /* Color de texto */
+}
+
+/* Estilo para los títulos dentro de la sección de favoritos */
+.favorites h2 {
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Contenedor para la previsión semanal */
+.forecast-weekly {
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre los elementos */
+    overflow-x: auto; /* Desplazamiento horizontal si es necesario */
+    margin-top: 20px; /* Margen superior */
+    padding: 10px; /* Relleno interno */
+    background: #2e3a59; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para cada elemento individual de la previsión */
+.forecast-item {
+    flex: 0 0 auto
+}
