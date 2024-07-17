@@ -99,5 +99,58 @@ body {
 
 /* Estilo para cada elemento individual de la previsión */
 .forecast-item {
-    flex: 0 0 auto
+    flex: 0 0 auto; /* No permitir crecimiento ni encogimiento */
+    width: 100px; /* Ancho fijo */
+    margin: 0 10px; /* Margen lateral */
+    text-align: center; /* Texto centrado */
+    background: #4a5a7a; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Relleno interno */
+}
+
+/* Estilo para los párrafos dentro de cada elemento de la previsión */
+.forecast-item p {
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para las imágenes dentro de cada elemento de la previsión */
+.forecast-item img {
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Altura de la imagen */
+}
+
+/* Contenedor para la lista de favoritos */
+#favorite-list {
+    display: flex; /* Usar flexbox para el layout */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    gap: 10px; /* Espacio entre los elementos */
+    margin-top: 20px; /* Margen superior */
+    padding: 10px; /* Relleno interno */
+    background-color: #f7f7f7; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Sombra para el contenedor */
+}
+
+/* Estilo para los botones individuales de las ciudades favoritas */
+#favorite-list button {
+    background-color: #546785; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 15px; /* Relleno interno */
+    cursor: pointer; /* Cambiar cursor a mano */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    font-family: 'Montserrat', sans-serif; /* Fuente utilizada */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Efecto hover para los botones de ciudades favoritas */
+#favorite-list button:hover {
+    background-color: #14d4a5; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para cuando los botones de ciudades favoritas están en foco */
+#favorite-list button:focus {
+    outline: none; /* Sin borde de enfoque */
+    box-shadow: 0 0 0 2px #14d4a5; /* Sombra alrededor del botón */
 }
