@@ -35,11 +35,10 @@ function callAPI(city) {
                 clearHTML(); // Limpiamos el contenido previo
                 showWeather(data); // Mostramos el clima actual
                 addFavorite(city); // Añadimos la ciudad a la lista de favoritos
-            }
+            } 
         })
         .catch(error => console.log(error)); // Manejo de errores
 }
-
 // Función para mostrar el clima en el DOM
 function showWeather(data) {
     const { name, main: { temp, humidity }, weather: [arr], dt } = data; // Desestructuramos los datos de la API
